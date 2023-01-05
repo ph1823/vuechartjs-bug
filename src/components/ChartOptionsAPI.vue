@@ -156,9 +156,9 @@ export default {
     Code down generate error
     */
     this.chartData.labels.push(Date.now());
-    console.log(this.cData);
+
     this.chartData.datasets[0].data.push(0);
-    console.log(this.cData);
+
   },
   methods: {
     hide: function(type) {
