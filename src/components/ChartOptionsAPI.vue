@@ -116,42 +116,34 @@ export default {
           }
         }
       },
-      cData: [0, 0, 0]
-    }
-  },
-  computed: {
-    chartData: {
-      // getter
-      get() {
-        return {
-          labels: [new Date(Date.now() - 30000), new Date(Date.now() - 60000), new Date(Date.now() - 90000)],
-          datasets: [
-            {
-              backgroundColor: "#FF484C",
-              borderColor: "#FF484C",
-              fill: false,
-              label: "RAM",
-              data: this.cData,
-              yAxisID: "yRD"
-            },
-            {
-              backgroundColor: "#FA7D03",
-              borderColor: "#FA7D03",
-              fill: false,
-              label: "CPU",
-              data: this.cData,
-              yAxisID: "yCPU"
-            },
-            {
-              backgroundColor: "#03e5fa",
-              borderColor: "#03e5fa",
-              fill: false,
-              label: "Disque",
-              yAxisID: "yRD",
-              data: this.cData
-            }
-          ]
-        }
+      chartData: {
+        labels: [new Date(Date.now() - 30000), new Date(Date.now() - 60000), new Date(Date.now() - 90000)],
+        datasets: [
+          {
+            backgroundColor: "#FF484C",
+            borderColor: "#FF484C",
+            fill: false,
+            label: "RAM",
+            data: [0, 0, 0],
+            yAxisID: "yRD"
+          },
+          {
+            backgroundColor: "#FA7D03",
+            borderColor: "#FA7D03",
+            fill: false,
+            label: "CPU",
+            data: [0, 0, 0],
+            yAxisID: "yCPU"
+          },
+          {
+            backgroundColor: "#03e5fa",
+            borderColor: "#03e5fa",
+            fill: false,
+            label: "Disque",
+            yAxisID: "yRD",
+            data: [0, 0, 0]
+          }
+        ]
       }
     }
   },
