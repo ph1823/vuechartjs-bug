@@ -157,7 +157,7 @@ export default {
     */
     this.chartData.labels.push(Date.now());
     console.log(this.cData);
-    this.cData.push(0);
+    this.chartData.datasets[0].data.push(0);
     console.log(this.cData);
   },
   methods: {
