@@ -34,6 +34,7 @@ import {
   Legend,
   TimeSeriesScale
 } from 'chart.js';
+
 import { Line } from 'vue-chartjs';
 import 'chartjs-adapter-moment';
 ChartJS.register(
