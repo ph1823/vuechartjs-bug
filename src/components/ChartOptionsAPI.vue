@@ -165,7 +165,7 @@ export default {
     */
     this.chartData.labels.push(Date.now());
     console.log(this.cData);
-    this.cData = [0, 0, 0, 0];
+    this.cData.push(0);
     console.log(this.cData);
   },
   methods: {
